@@ -1,0 +1,26 @@
+{
+    "name": "healthy1st",
+    "version": "1.0.0",
+    "description": "HealthyFirst là ứng dụng web được phát triển nhằm hỗ trợ các chi cục an toàn vệ sinh thực phẩm trong công\r  tác quản lý các cơ sở sản xuất thực phẩm hoặc kinh doanh dịch vụ ăn uống. Hệ thống cung cấp các chức\r  năng chính như sau:",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --inspect index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bonesettese/healthy1st.git"
+    },
+    "author": "bonesettese",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bonesettese/healthy1st/issues"
+    },
+    "homepage": "https://github.com/bonesettese/healthy1st#readme",
+    "dependencies": {
+        "express": "^4.18.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    }
+}
