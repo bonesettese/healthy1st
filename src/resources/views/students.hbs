@@ -1,0 +1,25 @@
+<div class='table-responsive'>
+          <table class='table table-sm table-hover'>
+            <thead>
+              <tr>
+                <th>MSV</th>
+                <th>Họ và tên</th>
+                <th>Lớp</th>
+                <th>Quê quán</th>
+                <th></th><td><a href="/students/add">add</a></td>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each students}}
+              <tr>
+                <td>{{this.id}}</td>
+                <td><a href="/students/{{this.id}}">{{this.name}}</a></td>
+                <td>{{this.class}}</td>
+                <td>{{this.hometown}}</td>
+                <td><a href="/students/edit/{{this.id}}">edit</a></td>
+                <td><a href="/students/delete/{{this.id}}">delete</a></td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>

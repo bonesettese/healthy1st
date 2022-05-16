@@ -1,0 +1,21 @@
+{{#each students}}
+<form method="post" action="/students/{{this.id}}?_method=put">
+<div class="mb-3 form-group">
+  <label for="id" class="form-label">Mã sinh viên</label>
+  <input type="text" class="form-control" id="id" name="id" value="{{this.id}}" placeholder="Nhập MSV..." required>
+</div>
+<div class="mb-3 form-group">
+  <label for="name" class="form-label">Họ và tên</label>
+  <input type="text" class="form-control" id="name" name="name" value="{{this.name}}" placeholder="Nhập họ và tên..." required>
+</div>
+<div class="mb-3 form-group">
+  <label for="class" class="form-label">Lớp</label>
+  <input type="text" class="form-control" id="class" name="class" value="{{this.class}}" placeholder="Nhập lớp..." required>
+</div>
+<div class="mb-3 form-group">
+  <label for="hometown" class="form-label">Quê quán</label>
+  <input type="text" class="form-control" id="hometown" name="hometown" value="{{this.hometown}}" placeholder="Nhập quê quán..." required>
+</div>
+<button type="submit" class="btn btn-primary">Sửa thông tin sinh viên</button>
+</form>
+{{/each}}
