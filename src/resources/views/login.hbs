@@ -1,0 +1,18 @@
+login
+
+{{#if messages.error}}
+{{messages.error}}
+{{/if}}
+
+<form method="post" action="/healthy1st/dang-nhap">
+<div>
+    <label for="username">Tên người dùng</label>
+    <input type="text" id="username" name="username" required>
+</div>
+<div>
+    <label for="password">Mật khẩu</label>
+    <input type="password" id="password" name="password" required>
+</div>
+<button type="submit">Đăng nhập</button>
+    </form>
+    <a href="/healthy1st/dang-ky">Đăng ký</a>

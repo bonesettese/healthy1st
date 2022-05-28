@@ -1,5 +1,4 @@
 const express = require('express')
-const StudentsController = require('../app/controllers/StudentsController')
 const router = express.Router()
 
 const studentsController = require('../app/controllers/StudentsController')
@@ -10,7 +9,7 @@ router.get('/index', studentsController.index)
 router.get('/edit/:id', studentsController.edit)
 router.put('/:id', studentsController.update)
 
-router.get('/add', StudentsController.add)
+router.get('/add', studentsController.add)
 router.post('/store', studentsController.store)
 
 router.get('/delete/:id', studentsController.delete)

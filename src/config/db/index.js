@@ -1,12 +1,12 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 async function connect() {
     try {
-        await mongoose.connect('mongodb://localhost:27017/healthy1st');
-        console.log('Connected');
+        await mongoose.connect('mongodb://localhost:27017/healthy1st')
+        console.log('Connected')
     } catch (error) {
-        console.log('Inconnected');
+        console.log('Inconnected')
     }
 }
 
-module.exports = { connect };
+module.exports = { connect }

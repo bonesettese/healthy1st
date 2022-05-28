@@ -2,11 +2,11 @@ const { default: mongoose } = require("mongoose")
 
 const Schema = mongoose.Schema
 
-const Student = new Schema({
+const Facility = new Schema({
     id: { type: String, unique: true },
     name: String,
     class: String,
     hometown: String
 })
 
-module.exports = mongoose.model('Student', Student)
+module.exports = mongoose.model('Facility', Facility)

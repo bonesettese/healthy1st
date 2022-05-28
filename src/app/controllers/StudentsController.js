@@ -33,7 +33,7 @@ class StudentsController {
     update(req, res, next) {
         Student.updateOne({ id: req.params.id }, req.body)
             .then(() => res.redirect('/students/index'))
-            .catch(next);
+            .catch(next)
     }
 
     add(req, res, next) {
@@ -47,18 +47,19 @@ class StudentsController {
     }
 
     store(req, res, next) {
-        const formData = req.body;
-        const student = new Student(formData);
+        const formData = req.body
+        console.log(formData)
+        const student = new Student(formData)
         student
             .save()
             .then(() => res.redirect('/students/index'))
-            .catch(next);
+            .catch(next)
     }
 
     delete(req, res, next) {
         Student.deleteOne({ id: req.params.id })
             .then(() => res.redirect('/students/index'))
-            .catch(next);
+            .catch(next)
     }
 
     index(req, res, next) {
